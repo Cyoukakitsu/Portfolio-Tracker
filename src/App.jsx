@@ -1,13 +1,16 @@
-// import { useState } from 'react';
+// App.jsx
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import LoginPage from "./features/auth/LoginPage";
+
 function App() {
   return (
-    <>
-      <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-500">
-          Investment Dashboard 🚀
-        </h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;
