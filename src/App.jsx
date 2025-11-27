@@ -1,6 +1,6 @@
 // App.jsx
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./features/auth/LoginPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (

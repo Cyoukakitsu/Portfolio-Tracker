@@ -1,6 +1,6 @@
 import { GalleryVerticalEnd } from "lucide-react";
-import { LoginForm } from "@/components/ui/LoginForm";
-import stock from "@/lib/photo/stock.jpg";
+import { LoginForm } from "@/features/auth/components/LoginForm";
+import stock from "../assets/photo/stock.jpg";
 export default function LoginPage() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
